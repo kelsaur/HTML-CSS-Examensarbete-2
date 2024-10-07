@@ -23,7 +23,7 @@ body {
   background-color: aliceblue;
   max-width: 70vw;
   grid-template-columns: repeat(24, 1fr);
-  grid-auto-rows: 34rem minmax(4rem, auto); /*34rem, 4rem(eller mer), 34rem, 4rem(eller mer) etc.. för 3 main-delar i body*/
+  grid-auto-rows: minmax(4rem, auto);
 }
 
 /*Header START*/
@@ -36,43 +36,44 @@ header .header-left {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   flex: 1;
 }
 
-header #header-bg {
+header .header-img-bg {
   object-fit: cover;
-  position: relative;
   aspect-ratio: 1/1;
+  width: 100%;
 }
 
-header #header-ol {
+header .header-img-ol {
   position: absolute; /*loggan hamnar ovanpå*/
 }
 
-header .header-right {
-  flex: 1;
+/*Header - right*/
+.header-right {
   display: flex;
   flex-direction: column;
-
-  img {
-    max-width: 12rem;
-  }
-
-  .seedling {
-    background-color: rgb(159, 109, 82);
-    flex: 1; /*Tar upp 50% av flexboxen*/
-    display: flex;
-    justify-content: center;
-  }
-
-  .dig {
-    background-color: rgb(10, 132, 111);
-    flex: 1; /*Tar upp resten av flexboxen - 50%*/
-    display: flex;
-    justify-content: center;
-  }
+  flex: 1; /*header-right tar upp hälften av header-flexboxen*/
 }
+
+.header-bg-box {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+header .header-right img {
+  max-width: 150px;
+}
+
+#top {
+  background-color: rgb(159, 109, 82);
+}
+
+#bottom {
+  background-color: rgb(10, 132, 111);
+}
+/*Header - right END*/
 /*Header END*/
 
 /*Nav START*/
@@ -112,7 +113,7 @@ main {
   grid-row: span 6;
   display: grid;
   grid-template-columns: repeat(24, 1fr);
-  grid-auto-rows: 34rem 4rem; /*34rem, 4rem(eller mer), 34rem, 4rem(eller mer) etc.. för 3 main-delar i body*/
+  grid-auto-rows: 34rem minmax(4rem, auto); /*34rem, 4rem(eller mer), 34rem, 4rem(eller mer) etc.. för 3 main-delar i body*/
 }
 
 .main-section-1 {
