@@ -23,72 +23,49 @@
       rel="stylesheet"
     />
     <!-- Fonts-->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Planned Planthood</title>
+    <link rel="stylesheet" href="css/style_minasidor.css" />
+    <title>Planned Planthood - Mina Sidor</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <section class="header-left">
+        <nav>
+          <div class="menu-bar-holder">
+            <div class="menu-bar">
+              <a href="">Planer</a>
+              <a href="">Historik</a>
+              <a href="">Tips</a>
+              <a href="">Logga in</a>
+            </div>
+          </div>
+        </nav>
+        <section class="header-img-holder">
           <img
-            class="header-img-bg"
-            src="Assets/img/hand.jpeg"
-            alt="Hand holding soil"
+            class="header-img"
+            src="Assets/img/handsidan.avif"
+            alt="Hand som plockar"
           />
-          <img class="header-img-ol" src="Assets/svg/Logo.svg" alt="Logo" />
-          <div class="header-menu">
-            <img
-              class="header-img-menu"
-              src="Assets/svg/menu-mobile.png"
-              alt="Menu"
-            />
+          <div class="header-mid-holder">
+            <img class="header-logo" src="Assets/svg/Logo.svg" alt="Logo" />
+            <h1>Mina Sidor</h1>
           </div>
         </section>
-        <!-- Header aside -->
-        <aside class="header-right">
-          <figure class="header-bg-box" id="top">
-            <img
-              class="seedling-img"
-              src="Assets/svg/seedling.svg"
-              alt="seedling"
-            />
-          </figure>
-          <figure class="header-bg-box" id="bottom">
-            <img
-              class="dig-img"
-              src="Assets/svg/dig.svg"
-              alt="shovel digging"
-            />
-          </figure>
-        </aside>
       </header>
-      <nav>
-        <div class="menu-bar-holder">
-          <div class="menu-bar">
-            <a href="">Planer</a>
-            <a href="">Historik</a>
-            <a href="">Tips</a>
-            <a href="">Logga in</a>
-          </div>
-        </div>
-      </nav>
       <main>
         <section class="main-section-1">
-          <h1>Planned Planthood</h1>
-          <section class="news-box-holder">
-            <figure class="news-figure">
-              <img src="Assets/svg/Vectorseedpackage.svg" alt="Seed package" />
-            </figure>
-            <section class="news-box-content">
-              <h2>Säsong att så</h2>
-              <p>
-                Våren är äntligen här i kollektivet. <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus voluptatum fuga ab expedita optio deserunt esse
-                veritatis dolorem.
-              </p>
-              <button>Så-tips</button>
+          <h1>Lägg till ny plantering:</h1>
+          <section class="input-area-holder">
+            <section class="input-holder">
+              <section class="input-planta">
+                <p>Planta:</p>
+                <input type="text" />
+              </section>
+              <section class="input-datum">
+                <p>Datum:</p>
+                <input type="text" />
+              </section>
             </section>
+            <button>Lägg till</button>
           </section>
         </section>
 
