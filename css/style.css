@@ -239,7 +239,7 @@ main .planer-box ul {
 
 main .planer-box ul li {
   /*Varje enskild box som innehåller img och text om bilden*/
-  max-width: 25rem;
+  max-width: 20rem;
   display: flex;
   flex-direction: column; /*!!!*/
   box-shadow: 3px 3px 4px 0 rgb(209, 209, 209);
