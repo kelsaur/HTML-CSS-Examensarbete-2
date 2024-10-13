@@ -100,6 +100,10 @@ nav .menu-bar {
   justify-content: space-between;
   align-items: center;
 
+  li {
+    list-style: none;
+  }
+
   a {
     font-family: "Maven Pro";
     font-size: 1.25rem;
@@ -462,10 +466,16 @@ footer {
   padding: 0 1rem 1rem;
   align-items: center;
 
-  div {
+  address {
     display: flex;
     gap: 1rem;
     align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      font-style: normal;
+    }
   }
 }
 
@@ -499,6 +509,7 @@ footer {
       align-self: flex-start;
       position: absolute;
       width: 100%;
+      box-shadow: none;
 
       img {
         max-width: 3rem;
@@ -728,9 +739,11 @@ footer {
       margin: auto;
     }
 
-    p {
-      font-weight: 400;
-      font-size: 1rem;
+    address {
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+      }
     }
   }
 
